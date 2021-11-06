@@ -593,6 +593,7 @@ void gui() {
   float x=1;
   float y=1;
   float z=30;
+  textSize(20);
   noStroke();
   //radar
   while (x<100) {
