@@ -163,7 +163,7 @@ class star extends Particle {
 
 void mousePressed() {
   println(mouseX, mouseY); 
-  if (ball[0].mySize<150&timer==0) {
+  if (ball[0].mySize<150&&timer==0) {
     timer=360;
     spooling=true;
   }
