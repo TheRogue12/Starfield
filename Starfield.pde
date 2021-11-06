@@ -681,7 +681,7 @@ void gui() {
   line(990,548,810,548);
   text("Frame-Shift Drive:",815,544);
   text("Status: "+FSDstatus,815,569);
-  textSize(18);
+  textSize(15);
   text(FSDcommand,815,588);
   
   fill(128, 62, 0, 100);
