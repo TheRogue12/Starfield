@@ -675,8 +675,9 @@ void gui() {
   text("Name: Asterope",295,568);
   text("Faction: AXI",295,588);
   text("Gov: Patronage",295,608);
-  text("Economy: AX",295,628);
+  text("Economy: AX",295,629);
   
+  //right info panel
   line(990,526,810,526);
   line(990,548,810,548);
   text("Frame-Shift Drive:",815,544);
@@ -693,7 +694,7 @@ void gui() {
   }
   
   //speed & heat bars
-  strokeWeight(15);
+  strokeWeight(17);
   stroke(128, 62, 0, 110);
   noFill();
   x=0.01;
