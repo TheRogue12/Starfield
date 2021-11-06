@@ -591,6 +591,7 @@ void cockpitDetail() {
 }
 
 void gui() {
+  fontSize(20);
   float x=1;
   float y=1;
   float z=30;
