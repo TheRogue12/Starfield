@@ -1,9 +1,11 @@
 
+@font-face{
+	font-family: "Eurostile";
+	src: url("../../Starfield/Eurostile.ttf");
+	
 body {
     background-color: rgb(200,200,200);
     color: rgb(0,0,0);
-    font-family: Eurostile;
-	src: url("../../Starfield/Eurostile.ttf");
     text-align: center;
 }
 
