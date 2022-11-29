@@ -2,8 +2,8 @@
 body {
     background-color: rgb(200,200,200);
     color: rgb(0,0,0);
-    font-family: Eurostyle;
-	src: url("../Starfield/Eurostyle.ttf");
+    font-family: Eurostile;
+	src: url("../Starfield/Eurostile.ttf");
     text-align: center;
 }
 
@@ -18,6 +18,7 @@ header {
 }
 
 footer {
+	font-family: "Open Sans";
 	font-style: italic;
 	font-size: 90%;
 }
