@@ -594,6 +594,7 @@ void gui() {
   float y=1;
   float z=30;
   textSize(20);
+  textFont(eurostile);
   noStroke();
   //radar
   while (x<100) {
@@ -619,18 +620,18 @@ void gui() {
   ellipse(641, 590, 211, 112);
   strokeWeight(8);
   point(641, 590);
-  
+
   //target info
-  if(timer!=1){
-  strokeWeight(3);
-  stroke(204, 129, 0);
-  arc(640,360,100,100,radians(5),radians(265));
-  fill(204, 129, 0);
-  line(690,364,770,364);
-  text("Asterope",690,357);
-  text("63.9Ly",692,385);
+  if (timer!=1) {
+    strokeWeight(3);
+    stroke(204, 129, 0);
+    arc(640, 360, 100, 100, radians(5), radians(265));
+    fill(204, 129, 0);
+    line(690, 364, 770, 364);
+    text("ASTEROPE", 690, 357);
+    text("63.9Ly", 692, 385);
   }
-  
+
   //ui shadow
   rectMode(CENTER);
   x=y=z=1;
@@ -652,47 +653,47 @@ void gui() {
     rect(380, 580, x, y);
     rect(900, 580, x, y);
   }
-  
+
   //left UI panel
-  String SysString="Next System:";
-  String FSDstatus="Ready";
+  String SysString="NEXT SYSTEM:";
+  String FSDstatus="READY";
   String FSDcommand="CLICK TO SPOOL FSD";
-  if(timer==1){
-   SysString="Current System:"; 
-   FSDstatus="Cooldown";
-   FSDcommand="FSD COOLDOWN";
+  if (timer==1) {
+    SysString="CURRENT SYSTEM:"; 
+    FSDstatus="COOLDOWN";
+    FSDcommand="FSD COOLDOWN";
   }
-  if(timer>1){
-   FSDstatus="Charging";
-   FSDcommand="CHARGING FSD...";
+  if (timer>1) {
+    FSDstatus="CHARGING";
+    FSDcommand="CHARGING FSD...";
   }
   strokeWeight(3);
   stroke(204, 129, 0);
   fill(204, 129, 0);
-  line(290,526,470,526);
-  line(290,548,470,548);
-  text(SysString,295,544);
-  text("Name: Asterope",295,568);
-  text("Faction: AXI",295,588);
-  text("Gov: Patronage",295,608);
-  text("Economy: AX",295,629);
-  
+  line(290, 526, 470, 526);
+  line(290, 548, 470, 548);
+  text(SysString, 295, 544);
+  text("NAME: ASTEROPE", 295, 568);
+  text("FACTION: AXI", 295, 588);
+  text("GOV: PATRONAGE", 295, 608);
+  text("ECONOMY: AX", 295, 629);
+
   //right info panel
-  line(990,526,810,526);
-  line(990,548,810,548);
-  text("Frame-Shift Drive:",815,544);
-  text("Status: "+FSDstatus,815,569);
+  line(990, 526, 810, 526);
+  line(990, 548, 810, 548);
+  text("FRAME-SHIFT DRIVE:", 811, 544);
+  text("STATUS: "+FSDstatus, 813, 569);
   textSize(15);
-  text(FSDcommand,815,588);
-  
+  text(FSDcommand, 813, 588);
+
   fill(128, 62, 0, 100);
   noStroke();
-  rect(900,608,180,25);
-  if(spooling==true){
+  rect(900, 608, 180, 25);
+  if (spooling==true) {
     fill(204, 129, 0);
-    rect(900,608,timer/2-180,25);
+    rect(900, 608, timer/2-180, 25);
   }
-  
+
   //speed & heat bars
   strokeWeight(17);
   stroke(128, 62, 0, 110);
@@ -709,12 +710,11 @@ void gui() {
       temp+=0.05;
     }
   }
-  
+
   //speed & heat text
   stroke(204, 129, 0);
   fill(204, 129, 0);
   textSize(20);
-  textFont(eurostile);
-  text("Heat: "+(int)(temp+20)+"%", 419, 665);
-  text("Speed: 0", 777, 665);
+  text("HEAT: "+(int)(temp+20)+"%", 417, 665);
+  text("SPEED: 0", 777, 665);
 }
