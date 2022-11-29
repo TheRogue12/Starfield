@@ -594,7 +594,7 @@ void gui() {
   float y=1;
   float z=30;
   textSize(20);
-  textFont(eurostile);
+  //textFont(eurostile);
   noStroke();
   //radar
   while (x<100) {
